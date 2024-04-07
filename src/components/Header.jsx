@@ -1,5 +1,6 @@
 import logo from "../assets/images/disney-logo.svg";
 import HeaderItem from "./HeaderItem";
+import { useState } from "react";
 import {
 	HiHome,
 	HiMagnifyingGlass,
@@ -10,6 +11,7 @@ import {
 
 import { HiPlus, HiDotsVertical } from "react-icons/hi";
 const Header = () => {
+	const [toggle, setToggle] = useState(false);
 	const menu = [
 		{
 			id: 1,
@@ -44,22 +46,57 @@ const Header = () => {
 	];
 	return (
 		<div className="flex items-center justify-between px-5 py-1">
-			<div className="flex gap-10 items-center">
-
-			<img
-				src={logo}
-				alt="Disney Logo"
-				className="w-[80px] md:w-[115Px] object-cover"
+			<div className="flex gap-20 items-center">
+				<img
+					src={logo}
+					alt="Disney Logo"
+					className="w-[80px] md:w-[115Px] object-cover"
 				/>
-			{menu.map((item) => (
-				<HeaderItem
-				key={item.id}
-				name={item.name}
-				Icon={item.icon}
-				/>
-			))}
+				<div className="hidden md:flex gap-8">
+					{menu.map((item) => (
+						<HeaderItem
+							key={item.id}
+							name={item.name}
+							Icon={item.icon}
+						/>
+					))}
+				</div>
+				<div className="flex md:hidden gap-5 items-center">
+					{menu.map(
+						(item, index) =>
+							index < 3 && (
+								<HeaderItem
+									key={item.id}
+									Icon={item.icon}
+								/>
+							)
+					)}
+					<div
+						className="md:hidden"
+						onClick={() => setToggle(!toggle)}>
+						<HeaderItem Icon={HiDotsVertical} />
+						{toggle ? (
+							<div className="absolute mt-3 bg-[#121212] border-[1px] border-gray-700 p-3 rounded">
+								{menu.map(
+									(item, index) =>
+										index > 2 && (
+											<HeaderItem
+												key={item.id}
+												name={item.name}
+												Icon={item.icon}
+											/>
+										)
+								)}
+							</div>
+						) : null}
+					</div>
+				</div>
 			</div>
-			<img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="user" className="w-[40px] rounded-full" />
+			<img
+				src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+				alt="user"
+				className="w-[40px] rounded-full"
+			/>
 		</div>
 	);
 };
