@@ -1,8 +1,26 @@
-# React + Vite
+# Disney Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Disney](/public/disney-logo.svg)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Disney Clone is a movie app built using React, Vite, Tailwind CSS, and The Movie Database (TMDB) API. It allows users to search for movies and view details about them.
+
+## Table of Contents
+
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Questions](#questions)
+
+## Technologies Used
+
+- React
+- Vite
+- Tailwind CSS
+- The Movie Database (TMDB) API
+- React Slick
+
+## Questions
+
+For any questions or concerns, please contact the author at [mouniabelkheir@outlook.com](mailto:mouniabelkheir@outlook.com).
