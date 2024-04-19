@@ -37,7 +37,9 @@ function Sliders() {
         adaptiveHeight: true,
         arrows: false, // Hide arrows
         fade: true, // Enable fade effect for better full-screen experience
-        cssEase: "linear", // Smoother fade transition
+      cssEase: "linear", // Smoother fade transition
+      autoplay: true, // Enable autoplay
+      autoplaySpeed: 3000, // Set the autoplay speed in milliseconds
     };
 
     const nextSlide = () => {
@@ -81,8 +83,8 @@ function Sliders() {
                             alt={item.name || item.title}
                             className="w-screen h-screen object-cover object-center absolute"
                         />
-                        <div className="absolute flex flex-col bg-black/55 h-screen w-screen">
-                            <h1 className="text-gray-200 text-2xl md:text-3xl lg:text-5xl font-bold mt-28 mx-16 sm:w-3/5  md:w-2/5">
+                        <div className="absolute flex flex-col bg-black/55 h-screen w-screen my-">
+                            <h1 className="text-gray-200 text-2xl md:text-3xl lg:text-5xl font-bold mt-40 mx-16 sm:w-3/5  md:w-2/5">
                                 {item.name || item.title}
                             </h1>
                             <h2 className="text-gray-200 text-lg md:text-xl lg:text-2xl font-bold mt-6 mx-20">
