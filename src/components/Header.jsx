@@ -1,4 +1,4 @@
-import logo from "../assets/images/disney-logo.svg";
+import logo from "/disney-logo.svg";
 import HeaderItem from "./HeaderItem";
 import { useState } from "react";
 import {
