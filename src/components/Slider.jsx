@@ -79,10 +79,10 @@ function Sliders() {
                         <img
                             src={IMAGE_BASE_URL + item.backdrop_path}
                             alt={item.name || item.title}
-                            className="w-screen h-screen object-cover absolute"
+                            className="w-screen h-screen object-cover object-center absolute"
                         />
                         <div className="absolute flex flex-col bg-black/55 h-screen w-screen">
-                            <h1 className="text-gray-200 text-3xl md:text-4xl lg:text-5xl font-bold mt-28 mx-16 w-2/5">
+                            <h1 className="text-gray-200 text-2xl md:text-4xl lg:text-5xl font-bold mt-28 mx-16 w-2/5">
                                 {item.name || item.title}
                             </h1>
                             <h2 className="text-gray-200 text-xl md:text-2xl lg:text-3xl font-bold my-16 mx-20">
