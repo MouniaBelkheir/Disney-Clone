@@ -51,13 +51,14 @@ const ProductionHouse = () => {
                 ">
 					<video
 						src={item.video}
-						type="video/mp4"
+						autoPlay
 						loop
 						playsInline
-						className="absolute top-0 rounded-lg z-0 opacity-0 hover:opacity-50 w-full"
-						onMouseOver={(e) => e.target.play()}
+						muted
+						className="absolute z-0  top-0 rounded-lg
+            opacity-0 hover:opacity-50"
 					/>
-					<img src={item.image} alt={item.name} className="w-full z-[1]" />
+					<img src={item.image} className="w-full z-[1] opacity-100" />
 				</div>
 			))}
 		</div>
