@@ -85,7 +85,7 @@ function Sliders() {
                             <h1 className="text-gray-200 text-2xl md:text-4xl lg:text-5xl font-bold mt-28 mx-16 w-2/5">
                                 {item.name || item.title}
                             </h1>
-                            <h2 className="text-gray-200 text-xl md:text-2xl lg:text-3xl font-bold my-16 mx-20">
+                            <h2 className="text-gray-200 text-lg md:text-xl lg:text-2xl font-bold mt-6 mb-10 mx-20">
                                 {item.release_date}
                             </h2>
                             <p className="text-gray-200 mx-16 w-2/ w-2/3 sm:w-1/3 ">
