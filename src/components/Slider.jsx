@@ -81,14 +81,14 @@ function Sliders() {
                             alt={item.name || item.title}
                             className="w-screen h-screen object-cover absolute"
                         />
-                        <div className="absolute flex flex-col bg-black/55 h-screen">
-                            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold my-16 mx-16 w-2/5">
+                        <div className="absolute flex flex-col bg-black/55 h-screen w-screen">
+                            <h1 className="text-gray-200 text-3xl md:text-4xl lg:text-5xl font-bold mt-28 mx-16 w-2/5">
                                 {item.name || item.title}
                             </h1>
-                            <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold my-16 mx-20">
+                            <h2 className="text-gray-200 text-xl md:text-2xl lg:text-3xl font-bold my-16 mx-20">
                                 {item.release_date}
                             </h2>
-                            <p className="text-white text-xl md:text-2xl lg:text-3xl mx-20 w-1/3 text-justify">
+                            <p className="text-gray-200 mx-16 w-2/ w-2/3 sm:w-1/3 ">
                                 {item.overview}
                             </p>
                         </div>
