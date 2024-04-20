@@ -45,14 +45,14 @@ const Header = () => {
 		},
 	];
 	return (
-		<div className="flex items-center justify-between px-5 py-1">
-			<div className="flex gap-20 items-center">
+		<div className="flex items-center wfull justify-between px-6  py-1 ">
+			<div className="flex gap-8  ">
 				<img
 					src={logo}
 					alt="Disney Logo"
 					className="w-[80px] md:w-[115Px] object-cover"
 				/>
-				<div className="hidden md:flex gap-8">
+				<div className="hidden md:flex gap-8 ml-32 ">
 					{menu.map((item) => (
 						<HeaderItem
 							key={item.id}
@@ -61,7 +61,7 @@ const Header = () => {
 						/>
 					))}
 				</div>
-				<div className="flex md:hidden gap-5 items-center">
+				<div className="flex md:hidden gap-5 items-center ml-14 ">
 					{menu.map(
 						(item, index) =>
 							index < 3 && (
