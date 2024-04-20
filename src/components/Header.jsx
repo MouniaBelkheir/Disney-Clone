@@ -1,6 +1,5 @@
-import logo from "/disney-logo.svg";
-import HeaderItem from "./HeaderItem";
 import { useState } from "react";
+import logo from "/disney-logo.svg";
 import {
 	HiHome,
 	HiMagnifyingGlass,
@@ -8,80 +7,65 @@ import {
 	HiPlayCircle,
 	HiTv,
 } from "react-icons/hi2";
-
 import { HiPlus, HiDotsVertical } from "react-icons/hi";
-const Header = () => {
+import HeaderItem from "./HeaderItem";
+function Header() {
 	const [toggle, setToggle] = useState(false);
 	const menu = [
 		{
-			id: 1,
 			name: "HOME",
 			icon: HiHome,
 		},
 		{
-			id: 2,
 			name: "SEARCH",
 			icon: HiMagnifyingGlass,
 		},
 		{
-			id: 3,
-			name: "WATCHLIST",
+			name: "WATCH LIST",
 			icon: HiPlus,
 		},
 		{
-			id: 4,
 			name: "ORIGINALS",
 			icon: HiStar,
 		},
 		{
-			id: 5,
 			name: "MOVIES",
 			icon: HiPlayCircle,
 		},
 		{
-			id: 6,
 			name: "SERIES",
 			icon: HiTv,
 		},
 	];
 	return (
-		<div className="flex items-center wfull justify-between px-6  py-1 ">
-			<div className="flex gap-8  ">
+		<div className="flex items-center justify-between p-5">
+			<div className="flex  gap-8 items-center">
 				<img
 					src={logo}
-					alt="Disney Logo"
-					className="w-[80px] md:w-[115Px] object-cover"
+					className="w-[80px] 
+        md:w-[115px] object-cover"
 				/>
-				<div className="hidden md:flex gap-8 ml-32 ">
-					{menu.map((item) => (
-						<HeaderItem
-							key={item.id}
-							name={item.name}
-							Icon={item.icon}
-						/>
+				<div className="hidden md:flex gap-8">
+					{menu.map((item, index) => (
+						<HeaderItem key={index} name={item.name} Icon={item.icon} />
 					))}
 				</div>
-				<div className="flex md:hidden gap-5 items-center ml-14 ">
+				<div className="flex md:hidden gap-5">
 					{menu.map(
 						(item, index) =>
-							index < 3 && (
-								<HeaderItem
-									key={item.id}
-									Icon={item.icon}
-								/>
-							)
+							index < 3 && <HeaderItem key={index} name={""} Icon={item.icon} />
 					)}
-					<div
-						className="md:hidden"
-						onClick={() => setToggle(!toggle)}>
-						<HeaderItem Icon={HiDotsVertical} />
+					<div className="md:hidden" onClick={() => setToggle(!toggle)}>
+						<HeaderItem name={""} Icon={HiDotsVertical} />
 						{toggle ? (
-							<div className="absolute mt-3 bg-[#121212] border-[1px] border-gray-700 p-3 rounded">
+							<div
+								className="absolute mt-3 bg-[#121212] 
+            border-[1px] border-gray-700 p-3 px-5 py-4">
 								{menu.map(
 									(item, index) =>
 										index > 2 && (
 											<HeaderItem
-												key={item.id}
+												key={index}
 												name={item.name}
 												Icon={item.icon}
 											/>
@@ -94,11 +78,10 @@ const Header = () => {
 			</div>
 			<img
 				src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
-				alt="user"
 				className="w-[40px] rounded-full"
 			/>
 		</div>
 	);
-};
+}
 
 export default Header;
