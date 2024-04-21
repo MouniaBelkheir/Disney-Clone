@@ -1,3 +1,4 @@
+import GenreMovieList from "./components/GenreMovieList";
 import Header from "./components/Header"
 import ProductionHouse from "./components/ProductionHouse";
 import Sliders from "./components/Slider";
@@ -7,6 +8,7 @@ function App() {
 			<Header />
 			<Sliders />
 			<ProductionHouse />
+			<GenreMovieList />
 		</div>
 	);
 }
