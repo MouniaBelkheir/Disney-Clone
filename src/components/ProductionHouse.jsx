@@ -43,7 +43,7 @@ const ProductionHouse = () => {
 		},
 	];
 	return (
-		<div className="flex flex-col md:flex-row gap-8 p-8 mx-3 px-5 md:px-16">
+		<div className="flex flex-col md:flex-row gap-4 py-6 px-5  ">
 			{productionHouseList.map((item) => (
 				<div key={item.id}
 					className="border-[2px] border-gray-600

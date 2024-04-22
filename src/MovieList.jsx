@@ -59,7 +59,7 @@ const MovieList = ({ genreId }) => {
         onClick={(event) => slideLeft(event)}
         onKeyDown={handleKeyDown}
         tabIndex={0}
-        className="text-white text-3xl font-bold cursor-pointer z-10 absolute hidden md:block  top-[45%] -left-5 "
+        className="text-gray-400 text-3xl font-bold cursor-pointer z-10 absolute hidden md:block  top-[45%] -left-5 "
       />
       <div
         ref={elementRef}
@@ -74,7 +74,7 @@ const MovieList = ({ genreId }) => {
         onClick={(event) => slideRight(event)}
         onKeyDown={handleKeyDown}
         tabIndex={0}
-        className="text-white text-3xl font-bold cursor-pointer z-10 absolute hidden md:block -right-5 top-[45%]"
+        className="text-gray-400 text-3xl font-bold cursor-pointer z-10 absolute hidden md:block -right-5 top-[45%]"
       />
     </div>
   );
