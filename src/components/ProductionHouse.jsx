@@ -48,7 +48,7 @@ const ProductionHouse = () => {
 				<div key={item.id}
 					className="border-[2px] border-gray-600
             rounded-lg hover:scale-110 transition-all duration-300
-            ease-in-out cursor-pointer relative shadow-xl 
+            ease-in-out relative shadow-xl 
             shadow-gray-800
             ">
 					<video
