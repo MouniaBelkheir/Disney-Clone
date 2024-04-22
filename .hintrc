@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-tap-highlight-color",
+          "text-underline-offset"
+        ]
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 123",
+    "not chrome <= 124",
+    "not edge <= 123",
+    "not firefox <= 125",
+    "not safari <= 17.4",
+    "not samsung <= 24"
+  ]
+}
