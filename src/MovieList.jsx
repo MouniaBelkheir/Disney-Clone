@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import GlobalApi from "./services/GlobalApi";
 import MovieCard from "./components/MovieCard";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
+import LargeMovieCard from "./components/LargeMovieCard";
 
-const MovieList = ({ genreId }) => {
+const MovieList = ({ genreId, index_ }) => {
   const [movieList, setMovieList] = useState([]);
   const elementRef = useRef(null);
 
@@ -67,7 +68,9 @@ const MovieList = ({ genreId }) => {
         onKeyDown={handleKeyDown}
         tabIndex={0}>
         {movieList.map((item, index) => (
-          <MovieCard key={index} movie={item} />
+          <>
+            {index_%3==0? <LargeMovieCard key={index} movie={item} />:<MovieCard key={index} movie={item} /> }
+          </>
         ))}
       </div>
       <IoChevronForwardOutline
@@ -82,6 +85,7 @@ const MovieList = ({ genreId }) => {
 
 MovieList.propTypes = {
   genreId: PropTypes.number,
+  index_: PropTypes.number,
 };
 
 export default MovieList;
