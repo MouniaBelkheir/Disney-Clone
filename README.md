@@ -9,9 +9,7 @@ Disney Clone is a movie app built using React, Vite, Tailwind CSS, and The Movie
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-- [Questions](#questions)
+- [Screenshots and Demos](#screenshots-and-demos)
 
 ## Technologies Used
 
