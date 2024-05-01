@@ -21,6 +21,10 @@ Disney Clone is a movie app built using React, Vite, Tailwind CSS, and The Movie
 - The Movie Database (TMDB) API
 - React Slick
 
-## Questions
+## Screenshots and Demos
 
-For any questions or concerns, please contact the author at [mouniabelkheir@outlook.com](mailto:mouniabelkheir@outlook.com).
+![screenshots](/public/1.jpeg)
+![screenshots](/public/2.jpeg)
+![screenshots](/public/3.jpeg)
+![screenshots](/public/disney-clone-.gif)
+![screenshots](/public/disney-clone-one-psi-vercel.gif)
