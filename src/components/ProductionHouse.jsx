@@ -1,22 +1,14 @@
-import disney from "/disney.png";
 import marvel from "/marvel.png";
 import national from "/national.png";
 import pixar from "/pixar.png";
 import starwars from "/starwars.png";
-import disneyV from "/disney.mp4";
 import marvelV from "/marvel.mp4";
 import nationalV from "/national.mp4";
 import pixarV from "/pixar.mp4";
 import starwarsV from "/starwars.mp4";
 const ProductionHouse = () => {
 	const productionHouseList = [
-		{
-			id: 1,
-			image: disney,
-			video: disneyV,
-			name: "disney",
-		},
-		{
+				{
 			id: 2,
 			image: pixar,
 			video: pixarV,
@@ -43,7 +35,7 @@ const ProductionHouse = () => {
 		},
 	];
 	return (
-		<div className="flex flex-col md:flex-row gap-4 py-6 px-5  ">
+		<div className="flex flex-col md:flex-row gap-8 p-8  ">
 			{productionHouseList.map((item) => (
 				<div key={item.id}
 					className="border-[2px] border-gray-600

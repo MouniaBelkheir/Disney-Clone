@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "/disney-logo.svg";
+import logo from "/movie.png";
 import {
 	HiHome,
 	HiMagnifyingGlass,
@@ -42,8 +42,7 @@ function Header() {
 			<div className="flex  gap-8 items-center">
 				<img
 					src={logo}
-					className="w-[80px] 
-        md:w-[115px] object-cover"
+					className="w-10"
 				/>
 				<div className="hidden md:flex gap-8">
 					{menu.map((item, index) => (

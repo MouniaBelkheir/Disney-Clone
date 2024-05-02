@@ -1,10 +1,8 @@
-# Disney Clone
-
-![Disney](/public/disney-logo.svg)
-
+# The Movie  
+---
 ## Description
 
-Disney Clone is a movie app built using React, Vite, Tailwind CSS, and The Movie Database (TMDB) API. It allows users to search for movies and view details about them.
+The Movie is a movie app built using React, Vite, Tailwind CSS, and The Movie Database (TMDB) API. It allows users to search for movies and view details about them.
 
 ## Table of Contents
 
@@ -21,8 +19,6 @@ Disney Clone is a movie app built using React, Vite, Tailwind CSS, and The Movie
 
 ## Screenshots and Demos
 
-![screenshots](/public/1.jpeg)
-![screenshots](/public/2.jpeg)
-![screenshots](/public/3.jpeg)
-![screenshots](/public/disney-clone-.gif)
-![screenshots](/public/disney-clone-one-psi-vercel.gif)
+
+
+
